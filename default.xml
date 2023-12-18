@@ -3,9 +3,17 @@
   <default revision="android-4.0.0_r1" remote="aosp" sync-j="4" />
   <remote fetch="ssh://git@192.168.21.99" name="aosp" />
   <remote fetch=".." name="bbpos" />
+  <include name="aosp.xml">
 
+  <remove-project name="platform/openssl" />
   <project path="openssl" name="platform/openssl" />
+
+  <remove-project name="platform/linux-kernel" />
   <project path="linux-kernel" name="platform/linux-kernel" remote="bbpos" revision="bbpos_android-4.0.0_r1" />
+
+  <remove-project name="platform/uboot" />
   <project path="uboot" name="platform/uboot" />
+
+  <remove-project name="platform/art" />
   <project path="art" name="platform/art" />
 </manifest>
