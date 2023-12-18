@@ -2,7 +2,7 @@
 <manifest>
 
   <remote fetch="ssh://git@192.168.21.99" name="bbpos" />
-  <default revision="refs/tags/android-13.0.0_r83"
+  <default revision="refs/heads/android-13"
            remote="bbpos"
            sync-j="4" />
 
