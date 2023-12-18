@@ -6,7 +6,7 @@
            remote="bbpos"
            sync-j="4" />
 
-  <include name="aosp.xml">
+  <include name="aosp.xml" />
 
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="platform/frameworks/base" />
