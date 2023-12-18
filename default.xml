@@ -2,16 +2,13 @@
 <manifest>
 
   <remote fetch="ssh://git@192.168.21.99" name="bbpos" />
-  <default revision="refs/heads/android-13"
-           remote="bbpos"
-           sync-j="4" />
 
   <include name="aosp.xml" />
 
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="bbpos" revision="android-13" />
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="platform/frameworks/native" />
+  <project path="frameworks/native" name="platform/frameworks/native" remote="bbpos" revision="android-13" />
   <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="platform/system/sepolicy" remote="bbpos" revision="android-13" />
 </manifest>
