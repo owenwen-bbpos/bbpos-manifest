@@ -6,9 +6,9 @@
   <include name="aosp.xml" />
 
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="platform/frameworks/base" remote="bbpos" revision="android-13" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="bbpos" revision="base_on_tag_android-13.0.0_r83" />
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="platform/frameworks/native" remote="bbpos" revision="android-13" />
+  <project path="frameworks/native" name="platform/frameworks/native" remote="bbpos" revision="base_on_tag_android-13.0.0_r83" />
   <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="platform/system/sepolicy" remote="bbpos" revision="android-13" />
+  <project path="system/sepolicy" name="platform/system/sepolicy" remote="bbpos" revision="base_on_tag_android-13.0.0_r83" />
 </manifest>
